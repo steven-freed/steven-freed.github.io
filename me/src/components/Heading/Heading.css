@@ -1,0 +1,18 @@
+.profile {
+    border-radius: 50%;
+    border: 2px solid gray;
+    display: inline-block;
+}
+
+#contact {
+    display: inline-block;
+}
+
+.contact-info {
+    display: block;
+}
+
+#heading {
+    width: 75%;
+    margin: 10px 0 15px 10px;
+}

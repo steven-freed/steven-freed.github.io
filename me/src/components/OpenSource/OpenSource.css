@@ -1,0 +1,31 @@
+#open-source {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: 95%;
+}
+
+.formatted-list {
+    list-style-type: none;
+}
+
+.formatted-list > li > span {
+    font-size: 1.0em;
+    display: inline-block;
+}
+
+.formatted-list > li > a {
+    font-size: 1.1em;
+    display: inline-block;
+}
+
+.formatted-list > li > img {
+    display: inline-block;
+}
+
+.formatted-list > li > iframe {
+    display: block;
+    width: 100%;
+    height: 200px;
+}
+
