@@ -33,7 +33,7 @@
     padding: 8px;
 }
 
-.fa-link:hover, .fa-home-link:hover {
+.fa-home-link:active,.fa-link:active {
     border-bottom: 2px solid #255cba;
 }
 

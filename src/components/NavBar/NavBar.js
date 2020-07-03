@@ -28,7 +28,14 @@ NavBar.prototype.getItems = function(routes) {
     window.addEventListener('popstate', function(e) {
         var active = document.getElementsByClassName('route-active')[0];
         document.getElementById(active.id).className = document.getElementById(active.id).className.replace(' route-active', '');
-        document.getElementById(e.path[0].location.pathname).className += ' route-active';
+        // tries Chrome catches Safari
+        var elId;
+        try { 
+            elId = e.path[0].location.pathname;
+        } catch (err) {
+            elId = e.target.location.pathname;
+        }
+        document.getElementById(elId).className += ' route-active';
     });
     return listItems.map(function(li) { return li }).join('');
 }
