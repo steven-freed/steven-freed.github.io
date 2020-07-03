@@ -9,6 +9,7 @@ Heading.prototype.markup = function() {
             <span>Contact Info:</span>\
             <span class="contact-info">✉️ freedgitr@gmail.com</span>\
             <span class="contact-info">💻 steven-freed@github</span>\
+            <span class="contact-info">🔗 <a href="https://www.linkedin.com/in/steven-freed-35638713b/">linkedin</a></span>\
         </div>\
         </div>');
 }
