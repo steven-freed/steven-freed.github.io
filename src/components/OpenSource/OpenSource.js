@@ -9,7 +9,7 @@ OpenSource.prototype.markup = function() {
             logo: '/assets/freedactive.png',
             link: 'https://www.npmjs.com/package/freedactive'
         }
-    ] 
+    ];
 
     return ('\
         <div id="open-source">\
@@ -18,11 +18,10 @@ OpenSource.prototype.markup = function() {
         </div>\
     ').$({
         0: openSources.map(function(source) {
-            var i = ('<li>\
+            return ('<li>\
                         <img src=${logo}></img>\
                         <a href=${link}>${name}</a>\
                         <span>: ${desc}</span>\
-                        <iframe src=${link}></iframe>\
                     </li>\
                 ').$({
                 logo: source.logo,
@@ -30,8 +29,6 @@ OpenSource.prototype.markup = function() {
                 name: source.name,
                 desc: source.desc,
             });
-            console.log(i)
-            return i;
         }).join('')
     });
 }
